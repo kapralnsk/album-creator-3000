@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="/static/lib/flat-ui/css/flat-ui.css"/>
+    <link type="text/css" rel="stylesheet" href="/static/css/style.css"/>
+    <title>Album Creator 3000</title>
+</head>
+<body>
+<div id="content" class="show-flex">
+    {% block content %}
+        {% include 'index_content.html' %}
+    {% endblock %}
+    <button id="next" class="btn btn-block btn-lg btn-primary">
+        <span id="loaded-text">Еще</span>
+            <div id="loader" class="windows8 hidden">
+                <div class="wBall" id="wBall_1">
+                    <div class="wInnerBall"></div>
+                </div>
+                <div class="wBall" id="wBall_2">
+                    <div class="wInnerBall"></div>
+                </div>
+                <div class="wBall" id="wBall_3">
+                    <div class="wInnerBall"></div>
+                </div>
+                <div class="wBall" id="wBall_4">
+                    <div class="wInnerBall"></div>
+                </div>
+                <div class="wBall" id="wBall_5">
+                    <div class="wInnerBall"></div>
+                </div>
+            </div>
+    </button>
+    </div>
+</body>
+<footer ><div class="pull-right">Идея <a href="http://2ch.hk/b/res/109164064.html">пацанов с двача</a></div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+<script src="/static/lib/flat-ui/js/vendor/jquery.min.js"></script>
+<script src="/static/js/reload.js"></script>
+<script src="/static/js/copy.js"></script>
+</html>

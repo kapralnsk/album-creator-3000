@@ -1,0 +1,10 @@
+{% block content %}
+    <div id="album" class="show-flex">
+        <h3>{{ album_name }}</h3>
+        <img style="height: 512px;width: auto;margin-bottom: 5px" src="{{ album_img }}" alt="">
+        <button style="margin-bottom: 5px;" id="copy-to-clipboard" class="btn btn-block btn-lg btn-primary" data-clipboard-text="{{ album_name }} {{ album_img }}">
+            <i class="fa fa-clipboard"></i>
+            <i class="fa fa-check-circle hidden"></i>
+        </button>
+    </div>
+{% endblock %}
